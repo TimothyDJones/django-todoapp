@@ -10,7 +10,7 @@ To run the application:
 git clone https://github.com/TimothyDJones/django-todoapp.git
 cd django-todoapp
 ```
-2. Create a Python 3 [virtual environment] and activate it:
+2. Create a Python 3 [virtual environment](https://docs.python.org/3/tutorial/venv.html) and activate it:
 ```bash
 python3 -m venv .env
 source .env/bin/activate
@@ -24,4 +24,4 @@ pip install -r requirements.txt
 python3 todoapp/manage.py runserver
 ```
 By default, Django runs on port 8080, but you can use a different port by specifying it at end of the command line (i.e., after `runserver`).
-5. Open your web browser to `[http://localhost:8080/](http://localhost:8080/)` (or replace `8080` with the port you specified in step #4 above).
+5. Open your web browser to `http://localhost:8080/` (or replace `8080` with the port you specified in step #4 above).
