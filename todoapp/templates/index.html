@@ -5,5 +5,14 @@ Tasks -
 {% endblock title %}
 
 {% block content %}
-    <h1>Hello, World!</h1>
+    <!-- <h1>Hello, World!</h1> -->
+
+    <form method="POST">
+    {% csrf_token %}
+
+        <!-- {{ task_form }} to display *ALL* fields -->
+        {{ task_form.title }} <!-- display specific field by attribute name -->
+
+        <button type="submit">Submit</button>
+    </form>
 {% endblock content %}
