@@ -15,4 +15,10 @@ Tasks -
 
         <button type="submit">Submit</button>
     </form>
+
+    <ol>
+        {% for task in tasks %}
+            <li>{{ task.title }}</li>
+        {% endfor %}
+    </ol>
 {% endblock content %}
