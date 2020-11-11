@@ -21,7 +21,8 @@ To run the application:
     ```
 4. Launch the application:
     ```bash
-    python3 todoapp/manage.py runserver
+    cd todoapp
+    python3 manage.py runserver
     ```
-    By default, Django runs on port 8080, but you can use a different port by specifying it at end of the command line (i.e., after `runserver`).
+    By default, Django runs on port **`8080`**, but you can use a different port by specifying it at end of the command line (i.e., after `runserver`).
 5. Open your web browser to `http://localhost:8080/` (or replace `8080` with the port you specified in step #4 above).
