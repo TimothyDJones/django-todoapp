@@ -19,10 +19,20 @@ To run the application:
     ```bash
     pip install -r requirements.txt
     ```
-4. Launch the application:
+4. Create and run the database migrations:
+    ```bash
+    python3 manage.py makemigrations
+    python3 manage.py migrate
+    ```
+5. Create the administrative user for administration dashboard:
+    ```bash
+    python3 manage.py createsuperuser
+    ```
+    You will prompted for username, email address, and password.
+6. Launch the application:
     ```bash
     cd todoapp
     python3 manage.py runserver
     ```
     By default, Django runs on port **`8000`**, but you can use a different port by specifying it at end of the command line (i.e., after `runserver`). See the [`runserver`](https://docs.djangoproject.com/en/3.1/ref/django-admin/#examples-of-using-different-ports-and-addresses) documentation for more information.
-5. Open your web browser to `http://localhost:8080/` (or replace `8080` with the port you specified in step #4 above).
+7. Open your web browser to [`http://localhost:8000/`](http://localhost:8000/) (or replace `8000` with the port you specified in step #4 above).
